@@ -32,7 +32,7 @@
       width: 100%;
       max-width: 700px;
       height: auto;
-      aspect-ratio: 1 / 1; /* 讓圖表維持 1:1 比例 */
+      aspect-ratio: 1 / 1;
     }
     @media (max-width: 600px) {
       h1 {
@@ -50,30 +50,27 @@
   <br><br>
   <iframe src="https://www.youtube.com/embed/yC1v1dpjMow" title="Linux實務" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-
-  <!-- 圖表容器 -->
   <div id="myPlot"></div>
 
   <script>
-    // 設定數據
     const xArray = ["設定VirtualBox", "安裝ubuntu", "建立一目錄shared分享至虛擬電腦", "在 shared 建立一個文字檔存任何文字在虛擬電腦中開啟此文字檔"];
     const yArray = [7, 20, 10, 2];
-
-    // 設定圖表佈局
     const layout = {
       title: "影片時間占比",
-      responsive: true // 使圖表具備響應式設計
+      responsive: true
     };
-
-    // 設定圖表數據
     const data = [{
       labels: xArray,
       values: yArray,
       type: "pie"
     }];
-
-    // 繪製圖表
     Plotly.newPlot("myPlot", data, layout);
   </script>
+  <h4>其他連結</h4>
+  <div class="container">
+    <div class="box"><a href="https://oscar940917.github.io/website//">41343129</a></div>
+    <div class="box"><a href="https://youchen624.github.io/NFUuse/">41343131</a></div>
+    <div class="box"><a href="https://hoyu17.github.io/abc/">41343132</div>
+  </div>
 </body>
 </html>
